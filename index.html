@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="I'm an assistant professor in the Department of Philosophy at the University of Manitoba.">
+        <meta name="author" content="Adam R. Murray">
+        <title>Adam R. Murray</title>
+
+        <style>
+            .column {
+                /*sets the current tag (div.column) to display inline i.e: the tags with this
+                 property (all div.column) will be positioned horizontally, rather than vertically*/
+                display:inline-block;
+
+                /*sets the content of this tag (div.column) to start at the top of the block, otherwise
+                 it would start from the bottom*/
+				vertical-align:top;
+
+                /*padding is the internal margin. set it to 15px from left and right*/
+                padding-left:15px;
+                padding-right:15px;
+
+                /*sets the width of the current tag (div.column) to be 45% of its parent tag (div.page) width*/
+                /*It would make sense to have each column to be exactly 50%, but then they would not be side by side,
+                  rather the first column would be on top of the second column (meaning that they would be displayed
+                  vertically (no effect of display:inline-block)), since two columns would actually not fit in
+                  horizontally to add up to 100% width.
+                 There are two reasons for this. 1) there is a small space between two columns, which can be removed
+                 by setting font-size to 0, to but that gets into CSS trickery so I am not doing this. 2) the padding
+                 itself changes the width of the element. With two padding properties as above, the actual width is then
+                 45% + 15px + 15px. If each column was exactly 50%, then with padding they would be  50% + 15px + 15px
+                 in width, so it would be impossible to fit in two columns.
+                 */
+                width:45%;
+            }
+
+            .page {
+                /*setting left and right margins to auto automatically centers the tag (div.page)
+                  horizontally relative to its parent tag (body)*/
+                margin-left:auto;
+                margin-right:auto;
+
+                /*sets the width of the current tag (div.page) to be 80% of its parent tag (body) width*/
+                width:80%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page">
+            <h1>Adam R. Murray</h1>
+            <div class="column">
+				<p>
+				Thanks for visiting.
+				</p>
+				<p>
+				I'm an assistant professor in the <a href="http://umanitoba.ca/philosophy/" target="_blank">Department of Philosophy</a> at the <a href="http://umanitoba.ca/" target="_blank">University of Manitoba</a>.
+				</p>
+				<p>
+				Before coming to Manitoba, I was a lecturer in the <a href="http://philosophy.utoronto.ca/" target="_blank">Department of Philosophy</a> at the University of Toronto, where I also did my PhD.
+				</p>
+				<p>
+				I work primarily on topics at the intersection of modal metaphysics and modal logic. I wrote my  dissertation on the theoretical significance of context-relativity for modal metaphysics, under the supervision of <a href="http://individual.utoronto.ca/jmwilson/" target="_blank">Jessica Wilson</a> and <a href="http://individual.utoronto.ca/benj/" target="_blank">Benj Hellie</a>, with <a href="http://www.natecharlow.com/" target="_blank">Nate Charlow</a> and <a href="https://philosophy.utoronto.ca/directory/nick-stang/" target="_blank">Nick Stang</a> as readers and <a href="https://www.uvm.edu/~lderosse/" target="_blank">Louis deRosset</a> as my external examiner.
+				</p>
+				<p>
+				For the current academic year, I am the chair of the <a href="http://umanitoba.ca/faculties/arts/departments/philosophy/grad_program/graduateprogram.html" target="_blank">graduate program in philosophy</a> at Manitoba.
+				</p>
+
+
+				<h2>Recent and Upcoming Talks</h2>
+				<p>
+				<i>Qualitative Dependence</i> (University of Manitoba Philosophical Fridays, winter 2020)
+				</p>
+				<p>
+				<i>Necessitist Propositional Dependence</i> (Yonsei Analytic Philosophy Workshop, August 2019; Birmingham Higher-Order Metaphysics Workshop, University of Birmingham, June 2019)
+				</p>
+				<p>
+				<i>Symposium talk on Propositional Dependence</i> (Canadian Philosophical Association, UBC, June 2019)
+				</p>
+				<p>
+				<i>Symposium talk on Chisholm's Paradox</i> (Pacific APA, April 2019)
+				</p>
+				<p>
+				<i>E--/--&gt;N</i> (with Chris Tillman; colloquium talk on essence and necessity; University of Nevada, Las Vegas)
+				</p>
+
+
+				<h2>Publications</h2>
+				<p>
+				<i>Forthcoming</i>. Propositional Dependence and Modal Perspectivism. To appear in Chris Tillman, editor, <i>The Routledge Handbook of Propositions</i> <span class="tooltip">&#9156;<span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></span>.
+				</p>
+				<p>
+				<a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/rmm_index_context.pdf" target="_blank">Relativized metaphysical modality: index and context</a> (with Benj Hellie and Jessica Wilson). Forthcoming in Otavio Bueno and Scott A. Shalkowski, editors, <i>The Routledge Handbook of Modality</i> <span class="tooltip">&#9156;<span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></span>.
+				</p>
+				<p>
+				2014. <a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/not.optimistic.pdf" target="_blank">Not the optimistic type</a> (with <a href="http://bdcaplan.ca/" target="_blank">Ben Caplan</a>, <a href="https://sites.google.com/site/christillman/home" target="_blank">Chris Tillman</a>, and <a href="https://sites.google.com/site/brianmcleanphilosophy/" target="_blank">Brian McLean</a>). <i>Canadian Journal of Philosophy</i> 43:575-589.
+				</p>
+				<p>
+				2013. <a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/ideal_individuation.pdf" target="_blank">Spinoza on essence and ideal individuation</a>. <i>Canadian Journal of Philosophy</i> 43:78-96.
+				</p>
+				<p>
+				2012. <a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/rmm-final-jan-27.pdf" target="_blank">Relativized metaphysical modality</a> (with Jessica Wilson). In Karen Bennett and Dean Zimmerman, editors, <i>Oxford Studies in Metaphysics</i> 7:189-226. Oxford University Press.
+				</p>
+
+
+            </div>
+            <div class="column">
+                <h2>Teaching</h2>
+				<p>
+				During the 2019--20 A.Y., I'm teaching:
+				</p>
+				<p>
+				<i>Introduction to Logic</i> (100-level introduction to logic and the philosophy of logic)
+				</p>
+				<p>
+				<i>Theory of Knowledge</i> (200-level course in epistemology)
+				</p>
+				<p>
+				In the past, I've taught:
+				</p>
+				<p>
+				<i>Modal Logic and Metaphysics</i> (a graduate-level course on topics in modal logic and modal metaphysics)
+				</p>
+				<p>
+				<i>History of Analytic Philosophy</i> (a 200-level course looking at core developments in analytic philosophy, roughly from Frege to Kripke)
+				</p>
+				<p>
+				<i>The Socrates Project</i> (at Toronto; an intensive upper-level undergraduate seminar focusing on teaching and research)
+				</p>
+				<p>
+				<i>Knowledge and Reality</i> (200-level metaphysics and epistemology; syllabus <a href="./docs/232_syllabus.pdf" target="_blank">here</a>).
+				</p>
+				<p>
+				<i>Metaphysics</i> (300-level course on modal metaphysics; theme: "Metaphysical Systems"; syllabus <a href="./docs/331.syllabus.pdf" target="_blank">here</a>).
+				</p>
+				<p>
+				<i>Modal Ontology</i> (400-level seminar course; syllabus <a href="./docs/406_syllabus.pdf" target="_blank">here</a>).
+				</p>
+				<p>
+				<i>Introduction to Symbolic Logic</i> (200-level logic, at Toronto)
+				</p>
+
+
+				<h2>Contact Information</h2>
+				<p>
+				Department of Philosophy<br>
+				University of Manitoba<br>
+				457 University College<br>
+				Winnipeg, Manitoba<br>
+				Canada R3T 2M8<br>
+				Office: (204) 272-1657<br>
+				adam.murray@umanitoba.ca
+				</p>
+            </div>
+        </div>
+    </body>
+</html>
+
