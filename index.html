@@ -7,8 +7,106 @@
         <title>Adam R. Murray</title>
 
         <style>
-		h1 {font-size:28pt;}
+            /*The typical way to include some custom font. Note that for the most
+              cases you only need the "regular" version of the font, as each browser can extend
+              upon it to create bold and italic versions automatically*/
+            @font-face {
+                /*How you want this font to be named. Can be anything*/
+                font-family: "Roboto";
+                /*The path to the font file, relative to the file with the styling (currently it's this file: index.html)*/
+                src: url('./fonts/Roboto-Regular.ttf');
+            }
+
+            /*The same structure follows here*/
+            /*For better web-page load times I suggest to only leave one of the "main-text" fonts in here.
+             (ie: either Radley or SourceSerifPro, not both)*/
+            @font-face {
+                font-family: "Radley";
+                src: url('./fonts/Radley-Regular.ttf');
+            }
+
+            /*The same structure follows here*/
+            @font-face {
+                font-family: "SourceSerifPro";
+                src: url('./fonts/SourceSerifPro-Regular.ttf');
+            }
+
+            /*The styling of the asterisk "tag" means that this styling will be applied to all of the
+             tags on the page. Every p, a, h1-h6, div, body, etc will have this style*/
+            * {
+                /*So we want all text on the page to be displayed with some specific font. We use
+                 the name of the font we have included above in this property to set the custom font*/
+                font-family: "SourceSerifPro";
+                /*font-family: "Radley"; */
+            }
+
+            /*And now we set specific font styling for all h1 elements (the main heading on the web page)*/
+            h1 {
+                font-size:28pt;
+                /*Note that we again set this property to have a custom font, but now we set it to be
+                 "Roboto", which is different from the main font of the page - exactly how we wanted it*/
+                font-family: "Roboto";
+            }
+
+            /*The tooltip is structured like <span class="tooltip">icon<span class="tooltiptext">the text</span></span>
+              This would set the style of "icon" text (which is usually a &#9156; symbol)*/
+            .tooltip {
+                /*To distinguish this symbol we set it to have some dotted border at the bottom:
+                 first set its weight (1px), then pattern (dotted), then color (black)*/
+                border-bottom: 1px dotted black;
+                /*To distinguish this symbol even more we set it to look bold*/
+                font-weight:bold;
+            }
+
+            /*We are getting into the weird territory of CSS. This combination of selectors can be read as:
+             "for a tooltip that currently has mouse cursor over it, set the visibility property of its
+             child element with class tooltiptext to visible"
+             This does make sense, because <span class="tooltiptext"></span> in our structure (example above) is
+             always inside of <span class="tooltip">...</span>, which makes the former element to be the child
+             of the latter element*/
+            .tooltip:hover .tooltiptext {
+                visibility:visible;
+            }
+
+            /*Now we style the text of the tooltip*/
+            .tooltiptext {
+                /*Setting font-weight to normal, because otherwise it would be bold, since in our structure of the
+                 tooltip <span class="tooltiptext"></span> is a child of <span class="tooltip">...</span>, which would
+                 inherit the bold font-weight from .tooltip*/
+                font-weight:normal;
+
+                /*We also set the font-size to be slightly smaller than the main text on the page for breaking contrast*/
+                font-size:10pt;
+
+                /*Optional: instead of aligning text to the left as we do by default, make it justified to the width*/
+                text-align:justify;
+
+                /*We set the border around the tooltiptext to break the contrast again. The order of parameters is the same
+                 as for the border-bottom example above*/
+                border: 2px solid black;
+
+                /*By default we make the tooltiptext invisible, since we want it to show only when the mouse is hovered
+                 on the tooltip*/
+                visibility:hidden;
+
+                /*Set background color explicitly, since otherwise it would be transparent*/
+                background-color:white;
+
+                /*z-index can be thought of as a property that describes the layering of elements.
+                 Elements with higher z-index will be drawn in front of the ones with lower z-index*/
+                z-index:1;
+
+                /*These require more detailed explanations*/
+                position:absolute;
+                left: 0;
+                padding:10px;
+                width:calc(100% - 60px);
+            }
+
             .column {
+                /*This new change also requires more detailed explanations*/
+                position:relative;
+
                 /*sets the current tag (div.column) to display inline i.e: the tags with this
                  property (all div.column) will be positioned horizontally, rather than vertically*/
                 display:inline-block;
@@ -36,15 +134,12 @@
             }
 
             .page {
-                /*setting left and right margins to auto automatically centers the tag (div.page)
-                  horizontally relative to its parent tag (body)*/
-                 margin-left: 30px;
-               /* margin-right:auto;*/
+                margin-left: 30px;
 
                 /*sets the width of the current tag (div.page) to be 80% of its parent tag (body) width*/
                 width:80%;
-		max-width: 1200px; 
-		}
+                max-width: 1200px;
+            }
         </style>
     </head>
 
