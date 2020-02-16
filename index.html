@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="I'm an assistant professor in the Department of Philosophy at the University of Manitoba.">
         <meta name="author" content="Adam R. Murray">
-        <title>Adam R. Murray</title>
+        <title>Adam Russell Murray</title>
 
         <style>
             /*The typical way to include some custom font. Note that for the most
@@ -12,41 +12,53 @@
               upon it to create bold and italic versions automatically*/
             @font-face {
                 /*How you want this font to be named. Can be anything*/
-                font-family: "Roboto";
+                font-family: "Inconsolata";
                 /*The path to the font file, relative to the file with the styling (currently it's this file: index.html)*/
-                src: url('./fonts/Roboto-Regular.ttf');
+                src: url('./fonts/Inconsolata-Regular.ttf');
             }
 
             /*The same structure follows here*/
             /*For better web-page load times I suggest to only leave one of the "main-text" fonts in here.
              (ie: either Radley or SourceSerifPro, not both)*/
             @font-face {
-                font-family: "Radley";
-                src: url('./fonts/Radley-Regular.ttf');
+                font-family: "Ubuntu";
+                src: url('./fonts/UbuntuMono-Regular.ttf');
             }
 
             /*The same structure follows here*/
             @font-face {
-                font-family: "SourceSerifPro";
-                src: url('./fonts/SourceSerifPro-Regular.ttf');
+                font-family: "Garamond";
+                src: url('./fonts/EBGaramond-Regular.ttf');
             }
 
             /*The styling of the asterisk "tag" means that this styling will be applied to all of the
              tags on the page. Every p, a, h1-h6, div, body, etc will have this style*/
             * {
-                /*So we want all text on the page to be displayed with some specific font. We use
+                /*So we want all text on the page to be displayed with some
+specific font. We usea
                  the name of the font we have included above in this property to set the custom font*/
-                font-family: "SourceSerifPro";
+                font-family: "Garamond";
+		font-size: 16pt;
                 /*font-family: "Radley"; */
             }
 
             /*And now we set specific font styling for all h1 elements (the main heading on the web page)*/
             h1 {
-                font-size:28pt;
+                font-size:35pt;
+		color: #829B99;
                 /*Note that we again set this property to have a custom font, but now we set it to be
                  "Roboto", which is different from the main font of the page - exactly how we wanted it*/
-                font-family: "Roboto";
+                font-family: "Inconsolata";
             }
+
+		h2 {font-size:22pt;}
+
+
+	    	a {text-decoration:none;
+		   color: #4D5B5A;
+		}	
+
+
 
             /*The tooltip is structured like <span class="tooltip">icon<span class="tooltiptext">the text</span></span>
               This would set the style of "icon" text (which is usually a &#9156; symbol)*/
@@ -140,14 +152,34 @@
                 width:80%;
                 max-width: 1200px;
             }
+
+
+	    .cvbutton {
+		color: black;
+		}
+
+	    .pic {
+		width: 80%;
+		height: 60%;
+		}
+
+	    .wrapper {
+		width: 100%;
+		}
+
+	
+
+
         </style>
     </head>
 
     <body>
         <div class="page">
-            <h1>Adam R. Murray</h1>
+            <h1>Adam Russell Murray</h1>
             <div class="column">
 				<p>
+				<h2>Bio</h2>
+				</p>
 				Thanks for visiting.
 				</p>
 				<p>
@@ -158,111 +190,202 @@
 				</p>
 				<p>
 				I work primarily on topics at the intersection
-of logic and metaphysics. I wrote my  dissertation on the theoretical significance of context-relativity for modal metaphysics, under the supervision of <a href="http://individual.utoronto.ca/jmwilson/" target="_blank">Jessica Wilson</a> and <a href="http://individual.utoronto.ca/benj/" target="_blank">Benj Hellie</a>, with <a href="http://www.natecharlow.com/" target="_blank">Nate Charlow</a> and <a href="https://philosophy.utoronto.ca/directory/nick-stang/" target="_blank">Nick Stang</a> as readers and <a href="https://www.uvm.edu/~lderosse/" target="_blank">Louis deRosset</a> as my external examiner.
+of logic, metaphysics, and the philosophy of language. I wrote my  dissertation
+on the theoretical significance of context-relativity for modal metaphysics,
+under the supervision of <a href="http://individual.utoronto.ca/jmwilson/"
+target="_blank">Jessica Wilson</a> and <a
+href="http://individual.utoronto.ca/benj/" target="_blank">Benj Hellie</a>. <a
+href="http://www.natecharlow.com/" target="_blank">Nate Charlow</a> and <a
+href="https://philosophy.utoronto.ca/directory/nick-stang/" target="_blank">Nick
+Stang</a> were readers and <a href="https://www.uvm.edu/~lderosse/"
+target="_blank">Louis deRosset</a> was my external examiner.
 				</p>
 				<p>
-				For the current academic year, I am the chair of the <a href="http://umanitoba.ca/faculties/arts/departments/philosophy/grad_program/graduateprogram.html" target="_blank">graduate program in philosophy</a> at Manitoba.
+				For the current academic year I am the chair of
+the <a
+href="http://umanitoba.ca/faculties/arts/departments/philosophy/grad_program/graduateprogram.html"
+target="_blank">graduate program in philosophy</a> at Manitoba. If you're a
+student looking for more information about our graduate program, feel free to
+drop me a line. 
+				</p>
+
+
+				<a class="cvbutton" href="./docs/cv_murray.pdf"
+target="_blank"><h2>C.V.</h2></a>
+
+		
+			<a href="mailto:adam.murray@umanitoba.ca">
+				<img src="https://img.icons8.com/office/40/000000/email.png">
+				</a>	
+
+
+				<br>
+				<br>
+				
+            		        <h2>Recent Teaching</h2>
+				
+				<p>
+				<b>2019-20:</b>
+				</p>
+
+				Introduction to Logic/Probability Theory and
+				Inductive Logic
+
+				<br>
+	
+		
+				Theory of  Knowledge				
+				
+
+				<p>
+				<b>2018-19:</b>
+				</p>
+				
+				
+				History of Analytic Philosophy
+
+				<br>
+
+				Critical Thinking
+
+				<br>
+	
+				Seminar on Modal Logic and Metaphysics
+				
+
+				<p>
+				<b>2017-18</b> (at Toronto):
+				</p>
+
+				Seminar in metaphysics (topic: <i>metaphysical
+				systems</i>)
+
+				<br>
+
+				The Socrates Project
+
+
+				<br>	
+				<h2>Contact</h2>
+				
+				<p>
+				457 University College; The University of
+				Manitoba
+				
+				
+				<br>
+				Winnipeg, Manitoba
+				<br>
+				Canada R3T 2M8
+				
+				<p>
+				tel. 204.272.1657
+				<br>
+				mail. adam.murray@umanitoba.ca				
 				</p>
 
 
 				<br>
-				<h2>Recent and Upcoming Talks</h2>
-				<p>
-				<i>Qualitative Dependence</i> (University of Manitoba Philosophical Fridays, winter 2020)
-				</p>
-				<p>
-				<i>Necessitist Propositional Dependence</i> (Yonsei Analytic Philosophy Workshop, August 2019; Birmingham Higher-Order Metaphysics Workshop, University of Birmingham, June 2019)
-				</p>
-				<p>
-				<i>Symposium talk on Propositional Dependence</i> (Canadian Philosophical Association, UBC, June 2019)
-				</p>
-				<p>
-				<i>Symposium talk on Chisholm's Paradox</i> (Pacific APA, April 2019)
-				</p>
-				<p>
-				<i>E--/--&gt;N</i> (with Chris Tillman; colloquium talk on essence and necessity; University of Nevada, Las Vegas)
-				</p>
 
-				<br>
-				<h2>Publications</h2>
-				<p>
-				<i>Forthcoming</i>. Propositional Dependence and Modal Perspectivism. To appear in Chris Tillman, editor, <i>The Routledge Handbook of Propositions</i> <span class="tooltip">&#9156;<span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></span>.
-				</p>
-				<p>
-				<a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/rmm_index_context.pdf" target="_blank">Relativized metaphysical modality: index and context</a> (with Benj Hellie and Jessica Wilson). Forthcoming in Otavio Bueno and Scott A. Shalkowski, editors, <i>The Routledge Handbook of Modality</i> <span class="tooltip">&#9156;<span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></span>.
-				</p>
-				<p>
-				2014. <a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/not.optimistic.pdf" target="_blank">Not the optimistic type</a> (with <a href="http://bdcaplan.ca/" target="_blank">Ben Caplan</a>, <a href="https://sites.google.com/site/christillman/home" target="_blank">Chris Tillman</a>, and <a href="https://sites.google.com/site/brianmcleanphilosophy/" target="_blank">Brian McLean</a>). <i>Canadian Journal of Philosophy</i> 43:575-589.
-				</p>
-				<p>
-				2013. <a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/ideal_individuation.pdf" target="_blank">Spinoza on essence and ideal individuation</a>. <i>Canadian Journal of Philosophy</i> 43:78-96.
-				</p>
-				<p>
-				2012. <a href="http://www.adamrmurray.com/uploads/2/5/4/9/25498439/rmm-final-jan-27.pdf" target="_blank">Relativized metaphysical modality</a> (with Jessica Wilson). In Karen Bennett and Dean Zimmerman, editors, <i>Oxford Studies in Metaphysics</i> 7:189-226. Oxford University Press.
-				</p>
+
+				<h2> Resources</h2>
+
+				<a href="mailto:adam.murray@umanitoba.ca">
+				<img src="./img/GitHub-Mark-32px.png">
+				</a>	
+
+
+				
+				
 
 
             </div>
             <div class="column">
-                <h2>Teaching</h2>
+
+
+				<h2>Papers</h2>
 				<p>
-				During the 2019--20 A.Y., I'm teaching:
+				Modality and Propositional
+Dependence. To appear in Chris Tillman, editor, <i>The Routledge Handbook of Propositions</i> <span class="tooltip">&#9156;<span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></span>.
 				</p>
 				<p>
-				<i>Introduction to Logic</i> (100-level introduction to logic and the philosophy of logic)
+				
+
+<a href="./docs/rmm_ic.pdf" target="_blank">Relativized Metaphysical Modality:
+Index and Context</a> (with Benj Hellie and Jessica Wilson). In  <i>The
+Routledge Handbook of Modality</i>, edited by Otavio Bueno and Scott Shalkowski.
+<span class="tooltip">&#9156;<span class="tooltiptext">Lorem ipsum dolor sit
+amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. </span></span>.
+
 				</p>
 				<p>
-				<i>Theory of Knowledge</i> (200-level course in epistemology)
+				2014. <a href="./docs/notoptimistic.pdf"
+target="_blank">Not the Optimistic Type</a> (with <a href="http://bdcaplan.ca/" target="_blank">Ben Caplan</a>, <a href="https://sites.google.com/site/christillman/home" target="_blank">Chris Tillman</a>, and <a href="https://sites.google.com/site/brianmcleanphilosophy/" target="_blank">Brian McLean</a>). <i>Canadian Journal of Philosophy</i> 43:575-589.
 				</p>
 				<p>
-				In the past, I've taught:
+				2013. <a href="./docs/seii.pdf"
+target="_blank">Spinoza on Essence and Ideal Individuation</a>. <i>Canadian Journal of Philosophy</i> 43:78-96.
 				</p>
 				<p>
-				<i>Modal Logic and Metaphysics</i> (a graduate-level course on topics in modal logic and modal metaphysics)
-				</p>
-				<p>
-				<i>History of Analytic Philosophy</i> (a 200-level course looking at core developments in analytic philosophy, roughly from Frege to Kripke)
-				</p>
-				<p>
-				<i>The Socrates Project</i> (at Toronto; an intensive upper-level undergraduate seminar focusing on teaching and research)
-				</p>
-				<p>
-				<i>Knowledge and Reality</i> (200-level metaphysics and epistemology; syllabus <a href="./docs/232_syllabus.pdf" target="_blank">here</a>).
-				</p>
-				<p>
-				<i>Metaphysics</i> (300-level course on modal metaphysics; theme: "Metaphysical Systems"; syllabus <a href="./docs/331.syllabus.pdf" target="_blank">here</a>).
-				</p>
-				<p>
-				<i>Modal Ontology</i> (400-level seminar course; syllabus <a href="./docs/406_syllabus.pdf" target="_blank">here</a>).
-				</p>
-				<p>
-				<i>Introduction to Symbolic Logic</i> (200-level logic, at Toronto)
+				2012. <a href="./docs/rmm.pdf"
+target="_blank">Relativized Metaphysical Modality</a> (with Jessica Wilson). In Karen Bennett and Dean Zimmerman, editors, <i>Oxford Studies in Metaphysics</i> 7:189-226. Oxford University Press.
 				</p>
 
+
+				<br>
+
+				<h2> In progress/unpublished</h2>
+				<p>
+				Indexicalism and Chandler's Paradox: Reply to Yagisawa  
+				<br>
+				<p>
+				Existence and Nonexistencen in Modal
+				Perspectivism  
+				</p>
+				<p>
+				<a href="./docs/disspdf"
+				target="_blank">Perspectives on Modal Metaphysics</a> (PhD dissertation; 2018)
+				</p>
+
+				<br>
+							
+				<h2>Recent talks</h2>
+				<p>
+				</p> 
+				<p>
+				Modality and Higher-order Dependence. Yonsei
+				Analytic Philosophy Workshop, August 2019. 
+				<p>
+				</p>
+				Necessitist Propositional Dependence. Birmingham Higher-Order Metaphysics
+				Workshop; University of Birmingham, June 2019. 
+				</p>
+				<p>
+				Symposium talk on Propositional Dependence.
+				Canadian Philosophical Association; UBC, June 2019. 
+				</p>
+				<p>
+				Symposium talk on Chisholm's Paradox. Pacific
+				APA; Vancouver, April 2019. 
+				</p>
+				<p>
+				Essence without Necessity (with Chris Tillman).
+				Department colloquium; UNLV, March 2019. 
+				</p>
+
+				<br>
+
+
 				
-				<br>	
-				<h2>Contact Information</h2>
-				<p>
-				Department of Philosophy
-				</p>
-				<p>	
-				University of Manitoba
-				</p>
-				<p>
-				457 University College
-				</p>
-				<p>
-				Winnipeg, Manitoba
-				</p>
-				<p>
-				Canada R3T 2M8
-				</p>
-				<p>
-				Office: (204) 272-1657
-				</p>
-				<p>
-				adam.murray@umanitoba.ca
-				</p>
+
+
+				
+			<div class="wrapper"> 
+			<img class="pic" src="./img/frown.jpeg">
+			</div>
+
             </div>
         </div>
     </body>
