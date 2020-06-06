@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="description" content="I'm an assistant professor in the Department of Philosophy at the University of Manitoba.">
         <meta name="author" content="Adam R. Murray">
+        <!-- Required in order for the mobile device to set the width properly-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Adam Russell Murray</title>
 
         <style>
@@ -38,27 +40,25 @@
 specific font. We usea
                  the name of the font we have included above in this property to set the custom font*/
                 font-family: "Garamond";
-		font-size: 16pt;
+                font-size: 16pt;
                 /*font-family: "Radley"; */
             }
 
             /*And now we set specific font styling for all h1 elements (the main heading on the web page)*/
             h1 {
                 font-size:35pt;
-		color: #829B99;
+                color: #829B99;
                 /*Note that we again set this property to have a custom font, but now we set it to be
                  "Roboto", which is different from the main font of the page - exactly how we wanted it*/
                 font-family: "Inconsolata";
             }
 
-		h2 {font-size:22pt;}
+            h2 {font-size:22pt;}
 
 
 	    	a {text-decoration:none;
-		   color: #4D5B5A;
-		}	
-
-
+               color: #4D5B5A;
+            }
 
             /*The tooltip is structured like <span class="tooltip">icon<span class="tooltiptext">the text</span></span>
               This would set the style of "icon" text (which is usually a &#9156; symbol)*/
@@ -112,7 +112,13 @@ specific font. We usea
                 position:absolute;
                 left: 0;
                 padding:10px;
-                width:calc(100% - 60px);
+                width:(100% - 20px);
+            }
+
+            .page {
+                /*sets the width of the current tag (div.page) to be 80% of body*/
+                width:80%;
+                padding-left:30px;
             }
 
             .column {
@@ -127,49 +133,53 @@ specific font. We usea
                  it would start from the bottom*/
 				vertical-align:top;
 
-                /*padding is the internal margin. set it to 15px from left and right*/
-                /*padding-left:15px;*/
-                padding-right:40px;
+                /*Makes a small margin (30px) on the right of the column*/
+                margin-right:30px;
 
-                /*sets the width of the current tag (div.column) to be 45% of its parent tag (div.page) width*/
-                /*It would make sense to have each column to be exactly 50%, but then they would not be side by side,
-                  rather the first column would be on top of the second column (meaning that they would be displayed
-                  vertically (no effect of display:inline-block)), since two columns would actually not fit in
-                  horizontally to add up to 100% width.
-                 There are two reasons for this. 1) there is a small space between two columns, which can be removed
-                 by setting font-size to 0, to but that gets into CSS trickery so I am not doing this. 2) the padding
-                 itself changes the width of the element. With two padding properties as above, the actual width is then
-                 45% + 15px + 15px. If each column was exactly 50%, then with padding they would be  50% + 15px + 15px
-                 in width, so it would be impossible to fit in two columns.
-                 */
-                width:45%;
+                /*sets the width of the current tag (div.column) to be 42.5% of its parent tag (div.page) width*/
+                width:42.5%;
             }
 
-            .page {
-                margin-left: 30px;
+            /*When the screen width is less than 710px on any device (narrow page)*/
+            @media (max-width: 710px) {
+                .page {
+                    /* Our page layout is basically a single-column, so we want the page to cover the 100%
+                     width of the screen*/
+                    width: 100%;
+                    padding-left:0;
+                }
 
-                /*sets the width of the current tag (div.page) to be 80% of its parent tag (body) width*/
-                width:80%;
-                max-width: 1200px;
+                .column {
+                    /*We reset a bunch of properties, that were used on the desktop
+                     version, but are not required on the mobile. Plus we set the with
+                     of the column to 90% of the .page div*/
+                    display:block;
+                    width:90%;
+
+                    /*Using these two properties, we can align .column relative to .page
+                     so that it has equal margins on left and right (ie: it is centerd in .page)*/
+                    margin-left:auto;
+                    margin-right:auto;
+                }
+
+                /*Since the page's title is not a part of the column, we need to align it separately*/
+                h1 {
+                    text-align:center;
+                }
             }
 
+            .cvbutton {
+            color: black;
+            }
 
-	    .cvbutton {
-		color: black;
-		}
+            .pic {
+            width: 80%;
+            height: 60%;
+            }
 
-	    .pic {
-		width: 80%;
-		height: 60%;
-		}
-
-	    .wrapper {
-		width: 100%;
-		}
-
-	
-
-
+            .wrapper {
+            width: 100%;
+            }
         </style>
     </head>
 
