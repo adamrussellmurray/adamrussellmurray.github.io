@@ -1,0 +1,20 @@
+
+
+
+Inside of the adamrussellmurray.github.io local repository execute
+|git status| to see what files have changed, and the |git add .|  to stage
+(prepare for the commit) all of the changed files.
+
+After staging the files, execute |git commit -m "the message of the commit"| to
+create a commit with changed files. If git asks you to enter information about
+the author of the commit, then you can follow the commands in the cheat sheet to
+do so, but in short it is: git config user.name “Some Username” git config
+user.email “some@email.com”
+
+Finally: |git push| to sync the changes in your local repository with
+the remote repository. 
+
+ Your remote website is available at
+"https://adamrussellmurray.github.io/", while your local website is available at
+"file://<path_to_index>" (ie:
+"file:///usr/adam/Desktop/adamrussellmurray.github.io/index.html")
